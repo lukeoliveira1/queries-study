@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Examples</title>
+    <style>
+        body {
+            background-color: #b4b4b4;
+            font-family: 'Arial', sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Query Examples</h1>
+
+    <h2>a) Books by a Specific Author</h2>
+    {% for book in books_by_author %}
+        <p>{{ book }}</p>
+    {% endfor %}
+
+    <h2>b) Books by Tag</h2>
+    {% for book in books_for_tags %}
+        <p>{{ book }}</p>
+    {% endfor %}
+    
+    <h2>c) Authors who contain a specific word in their biography</h2>
+    {% for author in bio_author_that_contain_words %}
+    <p>{{ author }}</p>
+    {% endfor %}
+    
+    <h2>d) Books With High Ratings on Review</h2>
+    {% for book in books_with_high_ratings %}
+        <p>{{ book }}</p>
+    {% endfor %}
+    
+    <h2>e) User Profile with Specific Websites</h2>
+    {% for user in user_profile_with_specific_websites %}
+    <p>{{ user }}</p>
+    {% endfor %}
+
+    <h2>f) Books Without Reviews</h2>
+    {% for book in books_without_reviews %}
+        <p>{{ book }}</p>
+    {% endfor %}
+
+    <h2>g) Authors With Most Books</h2>
+    {% for author in authors_with_most_books %}
+        <p>{{ author }}</p>
+    {% endfor %}
+    
+    <h2>h) Books with long Summaries</h2>
+    {% for book in books_with_long_summaries %}
+        <p>{{ book }}</p>
+    {% endfor %}
+
+    <h2>i) Reviews of Books by a Specific Author:</h2>
+    {% for review in reviews_of_books_by_author %}
+        <p>{{ review }}</p>
+    {% endfor %}
+
+    <h2>j) Books With Multiple Tags:</h2>
+    {% for book in books_with_multiple_tags %}
+        <p>{{ book }}</p>
+    {% endfor %}
+</body>
+</html>

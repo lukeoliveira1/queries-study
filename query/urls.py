@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import query_examples
+from core.views import exercises, query_examples
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('teste1/',query_examples),
+    path('teste1/', query_examples),
+    path('exercises/', exercises),
 ]
